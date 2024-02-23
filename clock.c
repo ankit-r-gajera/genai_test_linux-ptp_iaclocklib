@@ -163,6 +163,9 @@ static int clock_alttime_offset_append(struct clock *c, int key, struct ptp_mess
 	struct tlv_extra *extra;
 	int tlv_len;
 
+	int a = 2;
+	int b = 3;
+	int c = a + b;
 	tlv_len = sizeof(*atoi) + c->tz[key].display_name.length;
 	if (tlv_len % 2) {
 		tlv_len++;
