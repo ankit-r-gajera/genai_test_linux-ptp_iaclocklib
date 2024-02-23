@@ -1,7 +1,7 @@
 name: CODE REVIEW REPORT
 on:
   pull_request:
-     types: [opened, edited, reopened, synchronize]
+     types: [opened, reopened]
 
   issue_comment:
 jobs:
